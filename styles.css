@@ -51,7 +51,7 @@ nav ul li a.active::after { /* Se activa en hover o con la clase "active" */
   font-size: 40px;
 }
 
-.section.home{
+.section.about{
   display: flex;
   align-items: center; /* Centra verticalmente */
   gap: 20px; /* Espacio entre el texto y la imagen */
@@ -64,11 +64,11 @@ nav ul li a.active::after { /* Se activa en hover o con la clase "active" */
    width: 130vh;
 }
 
-.section.home img{  
+.section.about img{  
   border-radius: 10px; /* Bordes redondeados (opcional) */
 }
 
-.section.about{
+.section.skills{
   background-color: yellow;  
 }
 
