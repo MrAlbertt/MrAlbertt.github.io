@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/*Estilo del Navbar*/
+.header-nav{  
+  background-color: #FFFFFF;  
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.navbar{
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;  
+  width: 100%;
+  padding: 0 30px;
+}
+
+.div-logo{
+  display: flex;
+  align-items: center;        
+}
+
+.div-logo a{
+  font-weight: 600;
+  font-size: x-large;
+  color: #000000;
+  text-decoration: none;
+}
+
+.div-listaNav ul{
+  display: flex;  
+  list-style: none;
+  align-items: center;
+  gap: 40px;
+}  
+
+
+.div-listaNav ul li a{
+  color: #000000;
+  text-decoration: none;
+}
+/* Fin */
+
+
+
+
+
+
+/*Estilo de la seccion home*/
+.header-home{    
+  background-color: #fFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (orientation:landscape) {
+  .header-home{      
+    height: calc(100vh - 60px);    
+    padding: 0 40px;        
+  }
+}
+
+.div-home-text{
+  flex: 70%;
+  font-family: "Poppins", sans-serif;
+}
+
+.div-home-text h1{
+  font-size: 53px;
+  font-weight: 800;
+  color: #1a3c2c;  
+}
+
+.div-home-text p{
+  margin-top: 12px;
+  padding-right: 37px;
+  font-size: 27px;
+}
+
+.div-home-text button{
+  margin-top: 25px;
+  border-radius: 30px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #1a3c2c;
+  height: 40px;
+  width: 150px;  
+  font-size: 18px;  
+}
+
+.div-home-img{
+  display: flex;
+  flex: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-personal img{
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);    
+}
+
+/* Fin */
+
+
+
+
+
+
+/* Estilo del conector entre home y about */
+.separador-home{
+  background-color: #fFFFFF;
+  height: 28vh;
+}
+/* Fin */
+
+
+
+
+
+
+
+/* Estilos de la seccion about */
+.about{
+  display: block;
+  height: 100vh;
+  background-color: #1a3c2c;
+}
+
+.tarjetas-about{
+  display: flex;
+  height: 34vh;
+  width: 100%; 
+  gap: 90px;
+  padding: 0 90px;
+}
+
+.tarjeta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;  
+  background-color: black;
+  color: white;   
+  font-size: 22px;
+  font-weight: 500%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  position: relative;  
+  top:-100px; 
+  transition: top 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.tarjeta:hover{
+  top: -120px;
+  transform: scale(1.05);
+}
+
+.aboutme {
+  padding: 40px;
+  font-size: 25px;
+}
+
+.aboutme h2{  
+  font-size: 40px;
+}
+
+
+/* Fin */
+
+
+
+
+
+
+
+/*
+
+.ul-items{
+  display: flex;  
+  font-size: 2.7vh;
+  list-style: none;     
+  background-color: rgba(0, 0, 0, 0)
+
+}
+
+
+.ul-items a{
+  position: relative;
+  text-decoration: none;     
+  font-weight: bold;
+  padding: 0px 7px;
+  color: white;  
+}
+
+.ul-items a::after{
+  content: ""; 
+  position: absolute;
+  left: 0;
+  bottom: -3px; 
+  width: 0; 
+  height: 1px;
+  background-color: white;
+  transition: width 0.6s ease-in-out;
+}
+
+.nav-item{
+  margin: 0px 21px;
+}
+
+
+.ul-items a:hover::after,
+.ul-items a.active::after {
+  width: 100%;
+}
+
+nav:has(a:focus)::after {
+    width: 100%;
+}
+
+
+*/
