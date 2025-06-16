@@ -11,7 +11,7 @@
 /*Estilo del Navbar*/
 .header-nav{  
   background-color: #FFFFFF;  
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
@@ -32,8 +32,8 @@
 }
 
 .div-logo a{
-  font-weight: 600;
   font-size: x-large;
+  font-family: "Impact", sans-serif;  
   color: #000000;
   text-decoration: none;
 }
@@ -61,35 +61,32 @@
 .header-home{    
   background-color: #fFFFFF;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
 }
 
 @media (orientation:landscape) {
   .header-home{      
-    height: calc(100vh - 60px);    
-    padding: 0 40px;        
+    height: calc(100vh - 70px);    
+    padding: 0 24vh;        
   }
 }
 
-.div-home-text{
-  flex: 70%;
-  font-family: "Poppins", sans-serif;
-}
-
-.div-home-text h1{
-  font-size: 53px;
+.header-home h1{
+  font-size: 55px;
   font-weight: 800;
   color: #1a3c2c;  
 }
 
-.div-home-text p{
-  margin-top: 12px;
-  padding-right: 37px;
-  font-size: 27px;
+.header-home p{
+  text-align: center;
+  margin-top: 15px;   
+  font-size: 25px;
 }
 
-.div-home-text button{
+.header-home button{
   margin-top: 25px;
   border-radius: 30px;
   border: none;
@@ -100,51 +97,28 @@
   font-size: 18px;  
 }
 
-.div-home-img{
+/* Fin */
+
+
+
+
+
+
+/* Estilo de las tarjetas */
+.div-tarjetas{
   display: flex;
-  flex: 30%;
   justify-content: center;
-  align-items: center;
 }
 
-.foto-personal img{
-    border-radius: 15px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);    
-}
-
-/* Fin */
-
-
-
-
-
-
-/* Estilo del conector entre home y about */
-.separador-home{
-  background-color: #fFFFFF;
-  height: 28vh;
-}
-/* Fin */
-
-
-
-
-
-
-
-/* Estilos de la seccion about */
-.about{
-  display: block;
-  height: 100vh;
-  background-color: #1a3c2c;
-}
-
-.tarjetas-about{
+.tarjetas{
   display: flex;
-  height: 34vh;
-  width: 100%; 
-  gap: 90px;
-  padding: 0 90px;
+  box-shadow: inset 0 6px 30px rgba(0, 0, 0, 0.6);
+  height: 30vh;
+  width: 70%;   
+  padding: 0 60px;  
+  position: relative;
+  z-index: 0;
+  border-bottom: #1a3c2c solid 3px;
 }
 
 .tarjeta{
@@ -159,17 +133,106 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   border-radius: 40px;
   position: relative;  
-  top:-100px; 
-  transition: top 0.2s ease-in-out, transform 0.2s ease-in-out;
+  top:80px;   
+  z-index: 1;
+  transition: top 0.2s ease-in-out, transform 0.2s ease-in-out, z-index 0.3s ease-in-out;
 }
 
 .tarjeta:hover{
-  top: -120px;
+  top: 50px;
   transform: scale(1.05);
 }
 
+.tUno{
+  right: -60px;
+  transform: rotate(-7deg);    
+}
+
+.tUno:hover{  
+  transform: rotate(-10deg);
+  z-index: 2;
+}
+
+.tDos{
+  background-color: #1a3c2c;
+  right: -30px;
+  top: 65px;
+  transform: rotate(-3deg);
+}
+
+.tDos:hover{  
+  transform: rotate(-7deg);
+  z-index: 2;
+}
+
+.tTres{
+  right: 30px;
+  top: 65px;
+  transform: rotate(3deg);
+}
+
+.tTres:hover{  
+  transform: rotate(7deg);
+}
+
+.tCuatro{
+  background-color: #1a3c2c;
+  right: 60px;
+  transform: rotate(7deg);
+}
+
+.tCuatro:hover{  
+  transform: rotate(10deg);
+}
+/* Fin */
+
+
+
+
+
+
+/*Separador entre las tajetas y la seccionsobre mi*/
+.separadorTarjetas{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  position: relative;     
+  z-index: 2;
+  background-color: #fFFFFF;
+  height: 40vh;
+  width: 100%;
+}
+
+.linea-sepTarj{
+  background-color: #1a3c2c;
+  width: 85%;
+  height: 1px;
+}
+/**/
+
+
+
+
+
+
+
+/* Estilos de la seccion about */
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fFFFFF;  
+}
+
 .aboutme {
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 80px;
   font-size: 25px;
 }
 
